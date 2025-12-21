@@ -52,22 +52,22 @@ public class StartProg {
 
 			}
 		}
-		if (dir || twoName) {
+		if (dir && twoName) {
 			SaveFile.saveName(name, directory, picking.getPoint(), nameDoub, rec);
 			SaveFile.saveName(name, directory, picking.getWord(), nameStr, rec);
 			SaveFile.saveName(name, directory, picking.getNum(), nameInt, rec);
 
-		} else if (dir || !twoName) {
+		} else if (dir && !twoName) {
 			SaveFile.saveNameDir(directory, picking.getPoint(), nameDoub, rec);
 			SaveFile.saveNameDir(directory, picking.getWord(), nameStr, rec);
 			SaveFile.saveNameDir(directory, picking.getNum(), nameInt, rec);
 
-		} else if (!dir || twoName) {
+		} else if (!dir && twoName) {
 			SaveFile.saveName(name, picking.getPoint(), nameDoub, rec);
 			SaveFile.saveName(name, picking.getWord(), nameStr, rec);
 			SaveFile.saveName(name, picking.getNum(), nameInt, rec);
 
-		} else if (!dir || !twoName) {
+		} else if (!dir && !twoName) {
 			SaveFile.saveName(picking.getPoint(), nameDoub, rec);
 			SaveFile.saveName(picking.getWord(), nameStr, rec);
 			SaveFile.saveName(picking.getNum(), nameInt, rec);
