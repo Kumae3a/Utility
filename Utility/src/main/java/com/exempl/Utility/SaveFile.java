@@ -26,7 +26,7 @@ public class SaveFile {
 			e.printStackTrace();
 		}
 
-		if (save) {
+		
 			try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, save))) {
 				for (Object str : arr) {
 					writer.write(str.toString());
@@ -37,18 +37,7 @@ public class SaveFile {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-		} else {
-			try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, save))) {
-				for (Object str : arr) {
-					writer.write(str.toString());
-					writer.newLine();
-
-				}
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		}
+		
 	}
 
 	public static void saveName(String addName, List<Object> arr, String name, boolean save) {
@@ -59,7 +48,7 @@ public class SaveFile {
 		File file = new File(fileName);
 
 
-		if (save) {
+		
 			try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, save))) {
 				for (Object str : arr) {
 					writer.write(str.toString());
@@ -70,19 +59,7 @@ public class SaveFile {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-		} else {
-			try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, save))) {
-				for (Object str : arr) {
-					writer.write(str.toString());
-					writer.newLine();
-
-				}
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		}
-
+		
 	}
 
 	public static void saveName(List<Object> arr, String name, boolean save) {
@@ -100,7 +77,7 @@ public class SaveFile {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		if (save) {
+		
 			try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, save))) {
 				for (Object str : arr) {
 					writer.write(str.toString());
@@ -111,18 +88,7 @@ public class SaveFile {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-		} else {
-			try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, save))) {
-				for (Object str : arr) {
-					writer.write(str.toString());
-					writer.newLine();
-
-				}
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		}
+		
 	}
 
 	public static void saveNameDir(String directory, List<Object> arr, String name, boolean save) {
@@ -143,7 +109,7 @@ public class SaveFile {
 			e.printStackTrace();
 		}
 
-		if (save) {
+		
 			try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, save))) {
 				for (Object str : arr) {
 					writer.write(str.toString());
@@ -154,18 +120,7 @@ public class SaveFile {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-		} else {
-			try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName, save))) {
-				for (Object str : arr) {
-					writer.write(str.toString());
-					writer.newLine();
-
-				}
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		}
+		
 	}
 
 }
