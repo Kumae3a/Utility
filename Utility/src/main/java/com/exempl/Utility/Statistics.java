@@ -52,6 +52,12 @@ public class Statistics {
 		List<Long> number = list.stream()
 				.map(n -> (long) n)
 				.collect(Collectors.toList());
+		if(number.isEmpty()) {
+			minI = 0;
+			maxI = 0;
+			averageNumb = 0;
+		}else {
+			
 		
      		
 		for (int i = 0; i < number.size(); i++) {
@@ -63,6 +69,7 @@ public class Statistics {
 			}
 			averageNumb = averageNumb + number.get(i);
 		}
+		}
 
 	}
 
@@ -72,6 +79,13 @@ public class Statistics {
 				.map(n -> (double) n)
 				.collect(Collectors.toList());
 
+		if(number.isEmpty()) {
+			 averageDouble = 0;
+			 max = 0;
+			 min = 0;
+		}else {
+			
+		
 		for (int i = 0; i < number.size(); i++) {
 			if (min > number.get(i)) {
 				min = number.get(i);
@@ -82,7 +96,7 @@ public class Statistics {
 			averageDouble = +number.get(i);
 		}
 
-		
+		}
 	}
 
 	public void strings(List<Object> list) {
@@ -90,6 +104,7 @@ public class Statistics {
 		List<String> number = list.stream()
 				.map(n -> (String) n)
 				.collect(Collectors.toList());
+		
 		int min1 = 100;
 		int max1 = 0;
 		for (int i = 0; i < number.size(); i++) {
